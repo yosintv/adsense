@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script"; // Imported for optimization
+import Script from "next/script"; // Import the Next.js Script component
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -31,18 +31,17 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
-      // Suppress hydration warnings if using themes (like next-themes)
-      suppressHydrationWarning 
     >
       <head>
-        <Script 
-          async 
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7981191925382455" 
+        {/* Google AdSense Script using Next.js optimization */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7981191925382455"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
       </head>
-      <body className="min-h-full flex flex-col bg-white dark:bg-black text-slate-900 dark:text-slate-50">
+      <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">
           {children}
