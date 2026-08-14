@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yosintv.net'),
+  metadataBase: new URL('https://www.yosintv.me'),
   title: "YoSinTV Blogs",
   description: "Your premier destination for the future of streaming, entertainment technology, and cord-cutting guides.",
 };
@@ -32,7 +32,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
       <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7981191925382455" crossOrigin="anonymous"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossOrigin="anonymous"></script>
       </head>
       <body className="min-h-full flex flex-col">
         <Header />
